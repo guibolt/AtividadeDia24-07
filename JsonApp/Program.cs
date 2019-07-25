@@ -29,7 +29,7 @@ namespace JsonApp
                     Console.WriteLine("Qual item da lista deseja remover ? escolha pelo Index");
                     Int32.TryParse(Console.ReadLine(), out int qual);
 
-                    while (qual < 0 || qual > 13)
+                    while (qual <= 0 || qual > people.Count)
                     {
                         Console.WriteLine("Indice invalido, digitar novamente!");
                         Int32.TryParse(Console.ReadLine(), out qual);

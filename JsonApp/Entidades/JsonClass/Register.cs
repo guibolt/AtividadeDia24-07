@@ -25,15 +25,15 @@ namespace JsonApp.Entidades.JsonClass
         public string Registered { get; set; }
         public string Latitude { get; set; }
         public string Longitude { get; set; }
-        public List<string> Tags { get; set; } = new List<string>();
-        public List<Friend> Friends { get; set; } = new List<Friend>();
+        public List<string> Tags { get; set; } 
+        public List<Friend> Friends { get; set; }
         public string Greeting { get; set; }
         public string FavoriteFruit { get; set; }
         public EmissaoDigital EmissaoDigital { get; set; }
 
         public override string ToString()
         {
-            return $"NAME: {Name} Age: {Age} Gender: {Gender}  Company: {Company}  Index: {Index}* ".ToUpper();
+            return $"NAME: {Name} Age: {Age} Gender: {Gender}  Company: {Company}  Index: {Index+1}*\n".ToUpper();
         }
     }
 }

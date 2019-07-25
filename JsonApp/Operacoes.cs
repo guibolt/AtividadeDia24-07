@@ -12,21 +12,15 @@ namespace JsonApp
         //Metodo para exibir os registros
         public static void MostrarRegistro(List<Register> registers)
         {
-            Console.WriteLine("REGISTROS:");
-            Console.WriteLine("");
             Att(registers);
-            foreach (var item in registers)
-            {
-                Console.WriteLine(item.ToString());
-                Console.WriteLine("");
-            }
+            foreach (var item in registers){ Console.WriteLine(item.ToString());}
         }
         //Metodo para remover os registros
         public static void Remover(List<Register> people, int qual)
         {
             try
             {
-               people.Remove(people[qual]);
+                people.Remove(people[qual - 1]);
                 Console.WriteLine("REGISTRO REMOVIDO!");
             }
             catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
@@ -34,22 +28,18 @@ namespace JsonApp
         //Metodo para salvar os registros
         public static void Salvar(List<Register> people)
         {
-            Guid g;
-            g = Guid.NewGuid();
-            string path = $@"C:\Users\Treinamento 5\Desktop\AtividadeEntrega\ArquivoJson\Arquivo{g}";
-            StreamWriter sw2 = new StreamWriter(path);
-            string g2 = JsonConvert.SerializeObject(people);
-            sw2.WriteLine(g2);
-            sw2.Close();
+            string Lop = Guid.NewGuid().ToString();
+            string path = $@"C:\Users\Treinamento 5\Desktop\AtividadeEntrega\ArquivoJson\ArquivoJson{Lop.Substring(0, 2)}.json";
+            StreamWriter writter = new StreamWriter(path);
+            string arq = JsonConvert.SerializeObject(people);
+            writter.WriteLine(arq);
+            writter.Close();
         }
+        //Metodo para atualizar os indixes dos objetos
         public static void Att(List<Register> registers)
         {
-            Console.WriteLine("REGISTROS ATUALIZADOS!");
-            for (int i = 0; i < registers.Count; i++)
-            {
-                registers[i].Index = i;
-            }
-            
+            Console.WriteLine("REGISTROS COM INDICES ATUALIZADOS!\n");
+            for (int i = 0; i < registers.Count; i++) { registers[i].Index = i;  }
         }
     }
 }
