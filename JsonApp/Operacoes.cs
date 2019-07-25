@@ -14,7 +14,7 @@ namespace JsonApp
         {
             Console.WriteLine("REGISTROS:");
             Console.WriteLine("");
-
+            Att(registers);
             foreach (var item in registers)
             {
                 Console.WriteLine(item.ToString());
@@ -26,9 +26,7 @@ namespace JsonApp
         {
             try
             {
-                if (people.Count < 14) { people.Remove(people[qual - 1]); }
-                else if (people.Count < 11) { people.Remove(people[qual - 3]); }
-                else { people.Remove(people[qual]); }
+               people.Remove(people[qual]);
                 Console.WriteLine("REGISTRO REMOVIDO!");
             }
             catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
@@ -38,11 +36,20 @@ namespace JsonApp
         {
             Guid g;
             g = Guid.NewGuid();
-            string path = $@"C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\ArquivoJson\Arquivo{g}";
+            string path = $@"C:\Users\Treinamento 5\Desktop\AtividadeEntrega\ArquivoJson\Arquivo{g}";
             StreamWriter sw2 = new StreamWriter(path);
             string g2 = JsonConvert.SerializeObject(people);
             sw2.WriteLine(g2);
             sw2.Close();
+        }
+        public static void Att(List<Register> registers)
+        {
+            Console.WriteLine("REGISTROS ATUALIZADOS!");
+            for (int i = 0; i < registers.Count; i++)
+            {
+                registers[i].Index = i;
+            }
+            
         }
     }
 }

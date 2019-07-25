@@ -11,7 +11,7 @@ namespace JsonApp
         static void Main(string[] args)
         {
             // Obtendo e deserializando o objeto.
-            string targetPath = @"C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\ArquivoJson\Trabalho.json";
+            string targetPath = @"C:\Users\Treinamento 5\Desktop\AtividadeEntrega\ArquivoJson\Trabalho.json";
             var file = File.ReadAllText(targetPath);
             var people = JsonConvert.DeserializeObject<List<Register>>(file);
 
