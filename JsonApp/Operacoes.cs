@@ -7,8 +7,8 @@ using System.Text;
 
 namespace JsonApp
 {
-   public static class Operacoes
-    {  
+    public static class Operacoes
+    {
         //Metodo para exibir os registros
         public static void MostrarRegistro(List<Register> registers)
         {
@@ -20,28 +20,29 @@ namespace JsonApp
                 Console.WriteLine(item.ToString());
                 Console.WriteLine("");
             }
-
         }
         //Metodo para remover os registros
         public static void Remover(List<Register> people, int qual)
         {
-            people.Remove(people[qual]);
-         
+            try
+            {
+                if (people.Count < 14) { people.Remove(people[qual - 1]); }
+                else if (people.Count < 11) { people.Remove(people[qual - 3]); }
+                else { people.Remove(people[qual]); }
+                Console.WriteLine("REGISTRO REMOVIDO!");
+            }
+            catch (ArgumentOutOfRangeException e) { Console.WriteLine(e.Message); }
         }
         //Metodo para salvar os registros
         public static void Salvar(List<Register> people)
         {
-            int g = 0;
-            
-            string path = $@"C:\Users\Treinamento 5\Desktop\AtividadeEntrega\ArquivoJson\Arquivo{g+1}";
+            Guid g;
+            g = Guid.NewGuid();
+            string path = $@"C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\ArquivoJson\Arquivo{g}";
             StreamWriter sw2 = new StreamWriter(path);
             string g2 = JsonConvert.SerializeObject(people);
             sw2.WriteLine(g2);
             sw2.Close();
-            g++;
-          
-
         }
-
     }
 }

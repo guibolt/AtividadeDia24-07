@@ -9,3 +9,14 @@ C:\Users\Treinamento 5\Desktop\AtividadeEntrega\JsonApp\obj\Debug\netcoreapp2.2\
 C:\Users\Treinamento 5\Desktop\AtividadeEntrega\JsonApp\bin\Debug\netcoreapp2.2\JsonApp.pdb
 C:\Users\Treinamento 5\Desktop\AtividadeEntrega\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.dll
 C:\Users\Treinamento 5\Desktop\AtividadeEntrega\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.pdb
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\bin\Debug\netcoreapp2.2\JsonApp.deps.json
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\bin\Debug\netcoreapp2.2\JsonApp.runtimeconfig.json
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\bin\Debug\netcoreapp2.2\JsonApp.runtimeconfig.dev.json
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\bin\Debug\netcoreapp2.2\JsonApp.dll
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\bin\Debug\netcoreapp2.2\JsonApp.pdb
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.csprojAssemblyReference.cache
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.csproj.CoreCompileInputs.cache
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.AssemblyInfoInputs.cache
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.AssemblyInfo.cs
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.dll
+C:\Users\guibo\Desktop\Ativ\AtividadeDia24-07\JsonApp\obj\Debug\netcoreapp2.2\JsonApp.pdb
